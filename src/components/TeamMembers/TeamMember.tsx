@@ -29,13 +29,13 @@ const TeamMember = ({ team }: TeamMemberProps) => {
 
       <div className="flex space-x-5 mb-3 ">
         <a href={team.Facebook} target="_blank" rel="noopener noreferrer">
-          <FaFacebookF className="text-primary" size={22} />
+          <FaFacebookF className="text-primary" size={21} />
         </a>
         <a href={team.instagram} target="_blank" rel="noopener noreferrer">
-          <FaInstagram className="text-primary" size={22} />
+          <FaInstagram className="text-primary" size={21} />
         </a>
         <a href={team.twitter} target="_blank" rel="noopener noreferrer">
-          <FaTwitter className="text-primary" size={22} />
+          <FaTwitter className="text-primary" size={21} />
         </a>
       </div>
 

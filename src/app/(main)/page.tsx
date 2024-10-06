@@ -4,7 +4,7 @@ import Features from "./Features ";
 import HeroSection from "./HeroSection";
 import Services from "./Services";
 import ServicesOverview from "./ServicesOverview";
-import TeamMembers from "./TeamMembers";
+import TeamMemberPage from "./TeamMember";
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
 
       <Services />
 
-      <TeamMembers />
+      <TeamMemberPage />
 
       <Blog />
       

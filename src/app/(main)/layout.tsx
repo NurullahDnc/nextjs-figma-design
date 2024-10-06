@@ -17,7 +17,10 @@ export default function RootLayout({
     <html lang="tr">
       <body className={`antialiased overflow-x-hidden `}>
         <Navbar />
+        <div className="min-h-screen">
+
         {children}
+        </div>
         <Footer />
       </body>
     </html>

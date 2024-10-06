@@ -1,4 +1,4 @@
-import Cart from "@/components/Cart";
+import BlogCart from "@/components/BlogCart";
 import MoreButton from "@/components/MoreButton ";
 import Title from "@/components/Title";
 import { cartData } from "@/lib/data";
@@ -18,7 +18,7 @@ export default function Services() {
             key={i}
             className=" hover:scale-105 transition-all cursor-pointer  "
           >
-            <Cart
+            <BlogCart
               image={item.image}
               title={item.title}
               description={item.description}

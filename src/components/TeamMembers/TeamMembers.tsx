@@ -1,16 +1,16 @@
-import MoreButton from "@/components/MoreButton ";
-import TeamMember from "@/components/TeamMembers/TeamMember";
-import Title from "@/components/Title";
-import { teamData } from "@/lib/data";
 import React from "react";
+import MoreButton from "../MoreButton ";
+import { teamData } from "@/lib/data";
+import TeamMember from "./TeamMember";
+import Title from "../Title";
 
-export default function TeamMembers() {
+const TeamMembers = () => {
   return (
-    <div className="w-[90%] mx-auto mt-16 ">
+    <div className="w-[90%] mx-auto">
       <Title title="Our Distinguished Dental Specialists" />
       <div className=" grid grid-cols-2 md:grid-cols-4 gap-7 ">
         {teamData.map((item, i) => (
-          <div className=" cursor-pointer" key={i}>
+          <div key={i}>
             <TeamMember team={item} />
           </div>
         ))}
@@ -20,4 +20,6 @@ export default function TeamMembers() {
       </div>
     </div>
   );
-}
+};
+
+export default TeamMembers;

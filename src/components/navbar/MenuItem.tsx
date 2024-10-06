@@ -6,10 +6,10 @@ import hamburgerMenu from "@/app/assets/hamburger-menu.png";
 import SocialIcon from "./SocialIcon";
 
 const items = [
-  { title: "About", link: "#" },
-  { title: "Doctor", link: "#" },
-  { title: "Blog", link: "#" },
-  { title: "Contact", link: "#" },
+  { title: "About", link: "/about" },
+  { title: "Doctor", link: "/doctor" },
+  { title: "Blog", link: "/blog" },
+  { title: "Contact", link: "/contact" },
 ];
 
 export default function MenuItem() {
