@@ -9,7 +9,9 @@ import { useSearchParams } from 'next/navigation';
 const BlogContent = () => {
     const searchParams = useSearchParams();
     const postId = searchParams.get('postId');
-    const findBlog = cartData.filter((item) => item.id === postId);
+    const id = postId ? postId : cartData[0].id;
+
+    const findBlog = cartData.filter((item) => item.id === id);
 
     return (
       <>
