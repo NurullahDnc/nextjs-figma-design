@@ -16,6 +16,7 @@ const config: Config = {
         gray: "#18191F",
         blue: "#F0F6FB",
         white: "#FFFFFF",
+        bgInput: "#979797",
 
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

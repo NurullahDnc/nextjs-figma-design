@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import hamburgerMenu from "@/app/assets/hamburger-menu.png";
 import SocialIcon from "./SocialIcon";
@@ -14,9 +14,26 @@ const items = [
 
 export default function MenuItem() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // Dış tıklamaları dinle
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      // Bileşen unmounted olduğunda dinleyiciyi temizle
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
-    <div>
+    <div ref={menuRef}>
       <div className="hidden md:flex">
         <ol className="flex gap-2    text-[#0F1320] text-[14px] md:gap-[30px]">
           {items.map((item, index) => (

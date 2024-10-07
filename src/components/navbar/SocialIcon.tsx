@@ -5,11 +5,10 @@ import twitter from "@/app/assets/twitter.svg";
 import youtube from "@/app/assets/youtube.svg";
 import Image from "next/image";
 
-
 interface SocialIconData {
-    title: string;  
-    link: string;  
-  }
+  title: string;
+  link: string;
+}
 
 export default function SocialIcon() {
   const data: SocialIconData[] = [
@@ -21,9 +20,19 @@ export default function SocialIcon() {
 
   return (
     <div className=" flex items-center gap-4 ">
-      {data.map(( item, i ) => (
-        <a href={item.link} key={i} >
-          <Image src={item.title} alt={item.title} width={24} height={24} className="object-cover "  />
+      {data.map((item, i) => (
+        <a
+          href={item.link}
+          key={i}
+          className="bg-blue p-2 rounded-full hover: "
+        >
+          <Image
+            src={item.title}
+            alt={item.title}
+            width={24}
+            height={24}
+            className="object-cover "
+          />
         </a>
       ))}
     </div>

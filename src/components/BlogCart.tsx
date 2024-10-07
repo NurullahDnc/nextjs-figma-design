@@ -1,6 +1,8 @@
+"use client";
 import TextClip from "@/lib/TextClip";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname} from "next/navigation";
 import React from "react";
 
 interface CartProps {
@@ -11,6 +13,8 @@ interface CartProps {
 }
 
 export default function Cart({ image, title, description, link }: CartProps) {
+  const params = usePathname();
+
   return (
     <div className="   ">
       <Link href={link || ""}>
@@ -18,11 +22,15 @@ export default function Cart({ image, title, description, link }: CartProps) {
       </Link>
 
       <h2 className="font-semibold md:font-bold text-14 md:text-[17px] py-2 ">
-        <TextClip text={title} length={65} />
+        {params.length > 1 ? title : <TextClip text={title} length={50} />}
       </h2>
 
       <p className=" text-[12.5px] md:text-[15px] ">
-        <TextClip text={description} length={170} />
+        {params.length > 1 ? (
+          description
+        ) : (
+          <TextClip text={description} length={140} />
+        )}
       </p>
     </div>
   );

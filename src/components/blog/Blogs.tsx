@@ -1,9 +1,13 @@
-import React from 'react'
-import Title from '../Title'
-import { cartData } from '@/lib/data'
+import React from "react";
+import Title from "../Title";
+import { cartData } from "@/lib/data";
 import BlogCart from "@/components/BlogCart";
 
-const Blogs = () => {
+interface BlogProps {
+  slice?: boolean;
+}
+
+const Blogs = ({ slice }: BlogProps) => {
   return (
     <div>
       <Title
@@ -12,11 +16,8 @@ const Blogs = () => {
       />
 
       <div className=" grid grid-cols-2 md:grid-cols-4 gap-7 ">
-        {cartData.slice(0, 8).map((item, i) => (
-          <div
-            key={i}
-            className=" hover:scale-105 transition-all"
-          >
+        {cartData.slice(0, slice ? 8 : 999).map((item, i) => (
+          <div key={i} className=" hover:scale-105 transition-all">
             <BlogCart
               image={item.image}
               title={item.title}
@@ -27,7 +28,7 @@ const Blogs = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Blogs
+export default Blogs;

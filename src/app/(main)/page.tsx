@@ -1,6 +1,6 @@
 import Blog from "./Blog";
 import ContactPhone from "./ContactPhone";
-import Features from "./Features ";
+import Features from "./Features";
 import HeroSection from "./HeroSection";
 import Services from "./Services";
 import ServicesOverview from "./ServicesOverview";

@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Services() {
   return (
-    <div className="w-[90%] mx-auto mt-80 sm:mt-20 ">
+    <div className="w-[90%] mx-auto mt-72 sm:mt-16 ">
       <Title
         title="Our Umbrella of Services"
         description="Pain free procedures in dentistry"

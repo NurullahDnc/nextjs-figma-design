@@ -10,7 +10,7 @@ interface TitleProps {
 
 export default function Title({title, description} :  TitleProps) {
   return (
-    <div className=' text-center space-y-2 my-10 '>
+    <div className=' text-center space-y-2 my-7 '>
 
         <h2 className='text-3xl font-bold '>
             {title}

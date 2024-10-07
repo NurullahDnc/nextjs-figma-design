@@ -4,7 +4,7 @@ import SocialIcon from "@/components/navbar/SocialIcon";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-40 left-0 bg-card shadow-md right-0 max-h-[80px] flex items-center justify-between px-4 md:px-[80px] py-[20px]">
+    <div className="sticky top-0 z-40 left-0 bg-card shadow-md right-0 max-h-[80px] flex items-center justify-between px-4 md:px-[80px] py-[18px]">
       <div className="flex-1 hidden md:flex ">
         <SocialIcon />
       </div>

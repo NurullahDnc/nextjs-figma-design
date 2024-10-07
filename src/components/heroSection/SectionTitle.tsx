@@ -3,8 +3,8 @@ import { Button } from "../ui/button";
 
 export default function SectionTitle() {
   return (
-    <div className=" p-0 sm:p-10 md:p-24 space-y-5 space-x-3 ">
-      <p className=" text-primary text-2xl pl-3 ">Welcome to Dental Clinic</p>
+    <div className=" p-0 sm:p-10 md:p-24 space-y-5 space-x-4 ">
+      <p className=" text-primary text-2xl pl-4 ">Welcome to Dental Clinic</p>
 
       <h1 className="text-black font-bold text-[35px] md:text-[40px] leading-[45px]  ">
         Professional,Warm and friendly Dental care for you
