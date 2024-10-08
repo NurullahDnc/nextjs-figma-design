@@ -46,6 +46,11 @@
 ![Ekran görüntüsü 2024-10-08 132539](https://github.com/user-attachments/assets/ca5e12ff-ffcf-4a8d-a452-5cc14fd9d8a4)
 
 
+<hr/>
+
+![Ekran görüntüsü 2024-10-08 132914](https://github.com/user-attachments/assets/e251edb7-660b-4b47-85e7-84f9dae4bae4)
+
+
   ## Build
   - Next.js
   - TypeScript
