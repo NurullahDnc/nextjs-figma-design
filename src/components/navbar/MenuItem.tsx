@@ -63,7 +63,7 @@ export default function MenuItem() {
 
       {/* Açılan Menü */}
       {isOpen && (
-        <div className="absolute top-20 left-0 right-0 bg-white shadow-md z-10">
+        <div className="absolute left-0 right-0 bg-white shadow-md z-10">
           <ol className="flex flex-col text-[#0F1320] text-[14px] p-4">
             {items.map((item, index) => (
               <li key={index} className="py-2">
