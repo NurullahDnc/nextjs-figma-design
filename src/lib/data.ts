@@ -193,15 +193,7 @@ export const teamData = [
     Facebook: "/link",
     instagram: "/link",
     twitter: "/link",
-  }, {
-    id: "5",
-    image: teamImage2,
-    title: "Akash Kumar",
-    branch: "Dentıst",
-    Facebook: "/link",
-    instagram: "/link",
-    twitter: "/link",
-  },
+  }
 ];
 
 export const AboutData = [
